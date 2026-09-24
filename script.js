@@ -4,8 +4,6 @@ const musicPlayer = document.querySelector('#music-player');
 const musicStatus = document.querySelector('#music-status');
 const guestSubmit = document.querySelector('#guest-submit');
 const guestStatus = document.querySelector('#guest-status');
-const timeButton = document.querySelector('#time-button');
-const timeStatus = document.querySelector('#time-status');
 const visitorCounter = document.querySelector('#visitor-counter');
 
 let musicOn = false;
@@ -27,13 +25,6 @@ guestSubmit.addEventListener('click', () => {
   const message = document.querySelector('#guest-message').value.trim() || 'Feliz cumple, Felipe!!!';
   guestStatus.textContent = `>> ${name} dejo un mensaje: ${message}`;
   guestSubmit.textContent = 'FIRMADO!!!';
-});
-
-timeButton.addEventListener('click', () => {
-  document.body.classList.toggle('time-travel');
-  const traveling = document.body.classList.contains('time-travel');
-  timeButton.textContent = traveling ? 'REGRESAR AL PRESENTE' : 'ACTIVAR DELORIAN';
-  timeStatus.textContent = traveling ? '¡Rayos! ¡El camino esta lleno de luces!' : 'Viaje temporal cancelado. Todo vuelve a la normalidad.';
 });
 
 const startingCount = 1337;

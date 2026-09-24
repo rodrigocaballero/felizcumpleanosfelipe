@@ -106,11 +106,10 @@ body::before {
 
 .marquee { margin: 24px 0; padding: 13px 0; color: #000; background: #ff7b00; border: 5px dotted #ff0; font-family: 'Titan One', Impact, sans-serif; font-size: 20px; }
 
-.retro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.retro-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
 .panel { border: 6px ridge #fff; box-shadow: 8px 8px 0 #000; }
 .panel-title { padding: 13px; color: #fff; background: #000; font-size: 13px; text-align: center; }
 .guestbook-panel { background: var(--paper); }
-.future-panel { background: #063d51; color: #fff; }
 .guestbook-content, .future-content { padding: 22px; }
 .guestbook-content { display: grid; gap: 10px; }
 .big-red { margin: 0 0 7px; color: #ed005c; font-size: 17px; }
@@ -122,15 +121,6 @@ textarea { min-height: 76px; resize: vertical; }
 .pixel-button, .music-button { cursor: pointer; border: 4px outset #fff; padding: 12px 10px; color: #000; background: var(--acid); font: 10px 'Press Start 2P', monospace; box-shadow: 4px 4px 0 #000; }
 .pixel-button:active, .music-button:active { transform: translate(4px, 4px); box-shadow: none; border-style: inset; }
 .status { min-height: 14px; margin: 3px 0 0; color: #ff005c; font-size: 9px; line-height: 1.6; }
-.future-content { text-align: center; }
-.flux-capacitor { display: inline-block; margin: 2px 0 15px; padding: 15px; border: 4px double #0ff; color: #ff0; font-size: 34px; line-height: .8; animation: pulse 1s infinite; }
-.flux-capacitor span { font-size: 13px; color: #fff; }
-.yellow-text { color: #ff0; font-size: 12px; line-height: 1.7; }
-.future-content p { font-size: 10px; line-height: 1.8; }
-.date-display { margin: 18px auto; padding: 12px; width: fit-content; border: 4px dashed #ff0; color: #ff7438; font-size: 16px; line-height: 1.7; }
-.date-display span { color: #0ff; font-size: 10px; }
-.hot-button { color: #fff; background: #e00049; }
-
 .music-section { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; margin-top: 24px; padding: 22px; color: #fff; background: #8100a8; border: 7px outset #ff7b00; box-shadow: 8px 8px 0 #000; }
 .music-section h2 { margin: 0 0 12px; color: var(--yellow); font-size: 16px; animation: rainbow 1s steps(5) infinite; }
 .music-section p { margin: 0; font-size: 9px; line-height: 1.8; }
