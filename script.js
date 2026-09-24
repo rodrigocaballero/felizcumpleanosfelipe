@@ -16,7 +16,7 @@ musicButton.addEventListener('click', () => {
   musicPlayer.src = musicOn
     ? 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&enablejsapi=1&loop=1&playlist=dQw4w9WgXcQ'
     : 'about:blank';
-  musicButton.textContent = musicOn ? '■ DETENER LA MUSICA' : '▶ ACTIVAR NEVER GONNA GIVE YOU UP';
+  musicButton.textContent = musicOn ? '■ DETENER LA MUSICA' : '▶ ACTIVAR MUSICA';
   musicStatus.textContent = musicOn
     ? '♫ Sonando en la maquina del tiempo. ¡Sube el volumen! ♫'
     : 'La pista esta lista. Los navegadores necesitan un clic para arrancar el sonido.';
